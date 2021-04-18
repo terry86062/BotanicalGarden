@@ -10,6 +10,7 @@
 		DE88F036262C585800107012 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */; };
 		DE88F03F262C59A200107012 /* PlantUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F03E262C59A200107012 /* PlantUIComposer.swift */; };
 		DE88F04D262C663B00107012 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DE88F04C262C663B00107012 /* Kingfisher */; };
+		DE88F054262C67A200107012 /* KingfisherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F053262C67A200107012 /* KingfisherWrapper.swift */; };
 		DEBE46E2262BD66800DDDD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46E1262BD66800DDDD20 /* AppDelegate.swift */; };
 		DEBE46E4262BD66800DDDD20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46E3262BD66800DDDD20 /* SceneDelegate.swift */; };
 		DEBE46EB262BD66900DDDD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBE46EA262BD66900DDDD20 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 /* Begin PBXFileReference section */
 		DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		DE88F03E262C59A200107012 /* PlantUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantUIComposer.swift; sourceTree = "<group>"; };
+		DE88F053262C67A200107012 /* KingfisherWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherWrapper.swift; sourceTree = "<group>"; };
 		DEBE46DE262BD66800DDDD20 /* BotanicalGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BotanicalGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBE46E1262BD66800DDDD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEBE46E3262BD66800DDDD20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,22 @@
 			path = Composers;
 			sourceTree = "<group>";
 		};
+		DE88F051262C673200107012 /* Third Party Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				DE88F052262C676B00107012 /* Kingfisher */,
+			);
+			path = "Third Party Wrapper";
+			sourceTree = "<group>";
+		};
+		DE88F052262C676B00107012 /* Kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				DE88F053262C67A200107012 /* KingfisherWrapper.swift */,
+			);
+			path = Kingfisher;
+			sourceTree = "<group>";
+		};
 		DEBE46D5262BD66800DDDD20 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +191,7 @@
 				DEBE47B9262C05BB00DDDD20 /* UI + Presentation */,
 				DEBE4797262C00A200DDDD20 /* Feature */,
 				DEBE4717262BDF0200DDDD20 /* Networking */,
+				DE88F051262C673200107012 /* Third Party Wrapper */,
 				DEBE47AE262C045B00DDDD20 /* Supporting Files */,
 			);
 			path = BotanicalGarden;
@@ -521,6 +540,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE88F054262C67A200107012 /* KingfisherWrapper.swift in Sources */,
 				DEBE47AA262C018B00DDDD20 /* RemotePlantLoader.swift in Sources */,
 				DE88F036262C585800107012 /* MainQueueDispatchDecorator.swift in Sources */,
 				DEBE47D3262C278C00DDDD20 /* PlantTableViewCell.swift in Sources */,
