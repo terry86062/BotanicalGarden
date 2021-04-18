@@ -22,7 +22,7 @@ final class BasicRemoteLoader: RemoteLoader {
         do {
             urlRequest = try request.buildRequest()
         } catch {
-            completion(.failure(NetworkingError.Request.buildRequest))
+            completion(.failure(error))
             return
         }
         
