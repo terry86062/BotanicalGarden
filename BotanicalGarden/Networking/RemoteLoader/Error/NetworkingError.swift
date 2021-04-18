@@ -13,4 +13,8 @@ enum NetworkingError {
         case missingURL
         case buildRequest
     }
+    
+    enum Response: Error {
+        case invalidData
+    }
 }
