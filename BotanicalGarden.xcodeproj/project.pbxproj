@@ -15,6 +15,7 @@
 		DEBE46EE262BD66900DDDD20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBE46EC262BD66900DDDD20 /* LaunchScreen.storyboard */; };
 		DEBE46F9262BD66A00DDDD20 /* BotanicalGardenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46F8262BD66A00DDDD20 /* BotanicalGardenTests.swift */; };
 		DEBE4704262BD66A00DDDD20 /* BotanicalGardenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4703262BD66A00DDDD20 /* BotanicalGardenUITests.swift */; };
+		DEBE471A262BDFD500DDDD20 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4719262BDFD500DDDD20 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DEBE46FF262BD66A00DDDD20 /* BotanicalGardenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotanicalGardenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBE4703262BD66A00DDDD20 /* BotanicalGardenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotanicalGardenUITests.swift; sourceTree = "<group>"; };
 		DEBE4705262BD66A00DDDD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEBE4719262BDFD500DDDD20 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				DEBE46E3262BD66800DDDD20 /* SceneDelegate.swift */,
 				DEBE46E5262BD66800DDDD20 /* ViewController.swift */,
 				DEBE46E7262BD66800DDDD20 /* Main.storyboard */,
+				DEBE4717262BDF0200DDDD20 /* Networking */,
 				DEBE46EA262BD66900DDDD20 /* Assets.xcassets */,
 				DEBE46EC262BD66900DDDD20 /* LaunchScreen.storyboard */,
 				DEBE46EF262BD66900DDDD20 /* Info.plist */,
@@ -126,6 +129,22 @@
 				DEBE4705262BD66A00DDDD20 /* Info.plist */,
 			);
 			path = BotanicalGardenUITests;
+			sourceTree = "<group>";
+		};
+		DEBE4717262BDF0200DDDD20 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE4718262BDFC000DDDD20 /* HTTPClient */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DEBE4718262BDFC000DDDD20 /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE4719262BDFD500DDDD20 /* HTTPClient.swift */,
+			);
+			path = HTTPClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +279,7 @@
 			files = (
 				DEBE46E6262BD66800DDDD20 /* ViewController.swift in Sources */,
 				DEBE46E2262BD66800DDDD20 /* AppDelegate.swift in Sources */,
+				DEBE471A262BDFD500DDDD20 /* HTTPClient.swift in Sources */,
 				DEBE46E4262BD66800DDDD20 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
