@@ -13,10 +13,29 @@ class PlantViewController: UIViewController {
     @IBOutlet weak var navigationTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var navigationLabel: UILabel!
     @IBOutlet weak var coverNavigationView: UIView!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.dataSource = self
+            tableView.delegate = self
+        }
+    }
 
     // MARK: - override func
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
+
+// MARK: - UITableViewDataSource
+extension PlantViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 50
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension PlantViewController: UITableViewDelegate {}
