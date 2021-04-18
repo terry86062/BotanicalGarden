@@ -135,8 +135,7 @@
 		DEBE46E0262BD66800DDDD20 /* BotanicalGarden */ = {
 			isa = PBXGroup;
 			children = (
-				DEBE46E1262BD66800DDDD20 /* AppDelegate.swift */,
-				DEBE46E3262BD66800DDDD20 /* SceneDelegate.swift */,
+				DEBE47B5262C055B00DDDD20 /* Application */,
 				DEBE46E5262BD66800DDDD20 /* ViewController.swift */,
 				DEBE46E7262BD66800DDDD20 /* Main.storyboard */,
 				DEBE4797262C00A200DDDD20 /* Feature */,
@@ -276,6 +275,15 @@
 				DEBE46EA262BD66900DDDD20 /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEBE47B5262C055B00DDDD20 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE46E1262BD66800DDDD20 /* AppDelegate.swift */,
+				DEBE46E3262BD66800DDDD20 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
