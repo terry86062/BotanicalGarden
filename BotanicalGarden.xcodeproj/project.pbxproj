@@ -26,6 +26,7 @@
 		DEBE475F262BEDF500DDDD20 /* ResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE475E262BEDF500DDDD20 /* ResponseMapper.swift */; };
 		DEBE4767262BF0AC00DDDD20 /* RemoteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4766262BF0AC00DDDD20 /* RemoteLoader.swift */; };
 		DEBE476C262BF12C00DDDD20 /* BasicRemoteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE476B262BF12C00DDDD20 /* BasicRemoteLoader.swift */; };
+		DEBE4774262BF2BB00DDDD20 /* BasicResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4773262BF2BB00DDDD20 /* BasicResponseMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		DEBE475E262BEDF500DDDD20 /* ResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMapper.swift; sourceTree = "<group>"; };
 		DEBE4766262BF0AC00DDDD20 /* RemoteLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoader.swift; sourceTree = "<group>"; };
 		DEBE476B262BF12C00DDDD20 /* BasicRemoteLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRemoteLoader.swift; sourceTree = "<group>"; };
+		DEBE4773262BF2BB00DDDD20 /* BasicResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicResponseMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				DEBE475E262BEDF500DDDD20 /* ResponseMapper.swift */,
+				DEBE4773262BF2BB00DDDD20 /* BasicResponseMapper.swift */,
 			);
 			path = ResponseMapper;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				DEBE4754262BEAF000DDDD20 /* URLQueryDataAdapter.swift in Sources */,
 				DEBE475F262BEDF500DDDD20 /* ResponseMapper.swift in Sources */,
 				DEBE4729262BE3EC00DDDD20 /* Request.swift in Sources */,
+				DEBE4774262BF2BB00DDDD20 /* BasicResponseMapper.swift in Sources */,
 				DEBE4749262BEA3900DDDD20 /* NetworkingError.swift in Sources */,
 				DEBE4731262BE45A00DDDD20 /* HTTPMethod.swift in Sources */,
 				DEBE4722262BE0A200DDDD20 /* URLSessionHTTPClient.swift in Sources */,
