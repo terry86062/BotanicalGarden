@@ -31,6 +31,7 @@
 		DEBE4780262BF5F700DDDD20 /* RemotePlantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE477F262BF5F700DDDD20 /* RemotePlantItem.swift */; };
 		DEBE4788262BF9C800DDDD20 /* PlantRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4787262BF9C800DDDD20 /* PlantRequest.swift */; };
 		DEBE479A262C00D400DDDD20 /* PlantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4799262C00D400DDDD20 /* PlantItem.swift */; };
+		DEBE47A2262C011B00DDDD20 /* PlantLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47A1262C011B00DDDD20 /* PlantLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		DEBE477F262BF5F700DDDD20 /* RemotePlantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlantItem.swift; sourceTree = "<group>"; };
 		DEBE4787262BF9C800DDDD20 /* PlantRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRequest.swift; sourceTree = "<group>"; };
 		DEBE4799262C00D400DDDD20 /* PlantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantItem.swift; sourceTree = "<group>"; };
+		DEBE47A1262C011B00DDDD20 /* PlantLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 		DEBE4798262C00B800DDDD20 /* Plant */ = {
 			isa = PBXGroup;
 			children = (
+				DEBE47A1262C011B00DDDD20 /* PlantLoader.swift */,
 				DEBE4799262C00D400DDDD20 /* PlantItem.swift */,
 			);
 			path = Plant;
@@ -400,6 +403,7 @@
 				DEBE4754262BEAF000DDDD20 /* URLQueryDataAdapter.swift in Sources */,
 				DEBE475F262BEDF500DDDD20 /* ResponseMapper.swift in Sources */,
 				DEBE4729262BE3EC00DDDD20 /* Request.swift in Sources */,
+				DEBE47A2262C011B00DDDD20 /* PlantLoader.swift in Sources */,
 				DEBE4774262BF2BB00DDDD20 /* BasicResponseMapper.swift in Sources */,
 				DEBE4788262BF9C800DDDD20 /* PlantRequest.swift in Sources */,
 				DEBE4749262BEA3900DDDD20 /* NetworkingError.swift in Sources */,
