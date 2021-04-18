@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		DEBE46E2262BD66800DDDD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46E1262BD66800DDDD20 /* AppDelegate.swift */; };
 		DEBE46E4262BD66800DDDD20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46E3262BD66800DDDD20 /* SceneDelegate.swift */; };
-		DEBE46E6262BD66800DDDD20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46E5262BD66800DDDD20 /* ViewController.swift */; };
-		DEBE46E9262BD66800DDDD20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBE46E7262BD66800DDDD20 /* Main.storyboard */; };
 		DEBE46EB262BD66900DDDD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBE46EA262BD66900DDDD20 /* Assets.xcassets */; };
 		DEBE46EE262BD66900DDDD20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBE46EC262BD66900DDDD20 /* LaunchScreen.storyboard */; };
 		DEBE46F9262BD66A00DDDD20 /* BotanicalGardenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46F8262BD66A00DDDD20 /* BotanicalGardenTests.swift */; };
@@ -56,8 +54,6 @@
 		DEBE46DE262BD66800DDDD20 /* BotanicalGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BotanicalGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBE46E1262BD66800DDDD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEBE46E3262BD66800DDDD20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DEBE46E5262BD66800DDDD20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DEBE46E8262BD66800DDDD20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEBE46EA262BD66900DDDD20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEBE46ED262BD66900DDDD20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEBE46EF262BD66900DDDD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,8 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				DEBE47B5262C055B00DDDD20 /* Application */,
-				DEBE46E5262BD66800DDDD20 /* ViewController.swift */,
-				DEBE46E7262BD66800DDDD20 /* Main.storyboard */,
 				DEBE47B9262C05BB00DDDD20 /* UI + Presentation */,
 				DEBE4797262C00A200DDDD20 /* Feature */,
 				DEBE4717262BDF0200DDDD20 /* Networking */,
@@ -399,7 +393,6 @@
 			files = (
 				DEBE46EE262BD66900DDDD20 /* LaunchScreen.storyboard in Resources */,
 				DEBE46EB262BD66900DDDD20 /* Assets.xcassets in Resources */,
-				DEBE46E9262BD66800DDDD20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +419,6 @@
 			files = (
 				DEBE47AA262C018B00DDDD20 /* RemotePlantLoader.swift in Sources */,
 				DEBE4780262BF5F700DDDD20 /* RemotePlantItem.swift in Sources */,
-				DEBE46E6262BD66800DDDD20 /* ViewController.swift in Sources */,
 				DEBE4737262BE67700DDDD20 /* RequestAdapter.swift in Sources */,
 				DEBE4754262BEAF000DDDD20 /* URLQueryDataAdapter.swift in Sources */,
 				DEBE475F262BEDF500DDDD20 /* ResponseMapper.swift in Sources */,
@@ -480,14 +472,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DEBE46E7262BD66800DDDD20 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DEBE46E8262BD66800DDDD20 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DEBE46EC262BD66900DDDD20 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
