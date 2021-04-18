@@ -31,6 +31,8 @@
 		DEBE479A262C00D400DDDD20 /* PlantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4799262C00D400DDDD20 /* PlantItem.swift */; };
 		DEBE47A2262C011B00DDDD20 /* PlantLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47A1262C011B00DDDD20 /* PlantLoader.swift */; };
 		DEBE47AA262C018B00DDDD20 /* RemotePlantLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47A9262C018B00DDDD20 /* RemotePlantLoader.swift */; };
+		DEBE47C5262C079900DDDD20 /* PlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47C3262C079900DDDD20 /* PlantViewController.swift */; };
+		DEBE47C6262C079900DDDD20 /* PlantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBE47C4262C079900DDDD20 /* PlantViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		DEBE4799262C00D400DDDD20 /* PlantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantItem.swift; sourceTree = "<group>"; };
 		DEBE47A1262C011B00DDDD20 /* PlantLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLoader.swift; sourceTree = "<group>"; };
 		DEBE47A9262C018B00DDDD20 /* RemotePlantLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlantLoader.swift; sourceTree = "<group>"; };
+		DEBE47C3262C079900DDDD20 /* PlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewController.swift; sourceTree = "<group>"; };
+		DEBE47C4262C079900DDDD20 /* PlantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,9 +287,35 @@
 		DEBE47B9262C05BB00DDDD20 /* UI + Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEBE47C0262C071A00DDDD20 /* Plant */,
 				DEBE46EC262BD66900DDDD20 /* LaunchScreen.storyboard */,
 			);
 			path = "UI + Presentation";
+			sourceTree = "<group>";
+		};
+		DEBE47C0262C071A00DDDD20 /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE47C1262C073900DDDD20 /* Controllers */,
+				DEBE47C2262C074C00DDDD20 /* Views */,
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
+		DEBE47C1262C073900DDDD20 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE47C3262C079900DDDD20 /* PlantViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DEBE47C2262C074C00DDDD20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE47C4262C079900DDDD20 /* PlantViewController.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEBE46EE262BD66900DDDD20 /* LaunchScreen.storyboard in Resources */,
+				DEBE47C6262C079900DDDD20 /* PlantViewController.xib in Resources */,
 				DEBE46EB262BD66900DDDD20 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +465,7 @@
 				DEBE4767262BF0AC00DDDD20 /* RemoteLoader.swift in Sources */,
 				DEBE476C262BF12C00DDDD20 /* BasicRemoteLoader.swift in Sources */,
 				DEBE46E2262BD66800DDDD20 /* AppDelegate.swift in Sources */,
+				DEBE47C5262C079900DDDD20 /* PlantViewController.swift in Sources */,
 				DEBE4759262BEBDD00DDDD20 /* RequestContentAdapter.swift in Sources */,
 				DEBE471A262BDFD500DDDD20 /* HTTPClient.swift in Sources */,
 				DEBE46E4262BD66800DDDD20 /* SceneDelegate.swift in Sources */,
