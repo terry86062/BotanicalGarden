@@ -12,6 +12,7 @@
 		DE88F04D262C663B00107012 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DE88F04C262C663B00107012 /* Kingfisher */; };
 		DE88F054262C67A200107012 /* KingfisherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F053262C67A200107012 /* KingfisherWrapper.swift */; };
 		DE88F059262C6B1800107012 /* UIScreen+BotanicalGarden.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F058262C6B1800107012 /* UIScreen+BotanicalGarden.swift */; };
+		DE88F05E262C6B8C00107012 /* String+BotanicalGarden.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F05D262C6B8C00107012 /* String+BotanicalGarden.swift */; };
 		DEBE46E2262BD66800DDDD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46E1262BD66800DDDD20 /* AppDelegate.swift */; };
 		DEBE46E4262BD66800DDDD20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46E3262BD66800DDDD20 /* SceneDelegate.swift */; };
 		DEBE46EB262BD66900DDDD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBE46EA262BD66900DDDD20 /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		DE88F03E262C59A200107012 /* PlantUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantUIComposer.swift; sourceTree = "<group>"; };
 		DE88F053262C67A200107012 /* KingfisherWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherWrapper.swift; sourceTree = "<group>"; };
 		DE88F058262C6B1800107012 /* UIScreen+BotanicalGarden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+BotanicalGarden.swift"; sourceTree = "<group>"; };
+		DE88F05D262C6B8C00107012 /* String+BotanicalGarden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+BotanicalGarden.swift"; sourceTree = "<group>"; };
 		DEBE46DE262BD66800DDDD20 /* BotanicalGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BotanicalGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBE46E1262BD66800DDDD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEBE46E3262BD66800DDDD20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 			children = (
 				DEBE47D9262C29C500DDDD20 /* UITableView+BotanicalGarden.swift */,
 				DE88F058262C6B1800107012 /* UIScreen+BotanicalGarden.swift */,
+				DE88F05D262C6B8C00107012 /* String+BotanicalGarden.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 				DEBE46E2262BD66800DDDD20 /* AppDelegate.swift in Sources */,
 				DEBE47C5262C079900DDDD20 /* PlantViewController.swift in Sources */,
 				DEBE4759262BEBDD00DDDD20 /* RequestContentAdapter.swift in Sources */,
+				DE88F05E262C6B8C00107012 /* String+BotanicalGarden.swift in Sources */,
 				DEBE471A262BDFD500DDDD20 /* HTTPClient.swift in Sources */,
 				DEBE46E4262BD66800DDDD20 /* SceneDelegate.swift in Sources */,
 			);
