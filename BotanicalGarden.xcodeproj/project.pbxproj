@@ -32,6 +32,7 @@
 		DEBE4788262BF9C800DDDD20 /* PlantRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4787262BF9C800DDDD20 /* PlantRequest.swift */; };
 		DEBE479A262C00D400DDDD20 /* PlantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4799262C00D400DDDD20 /* PlantItem.swift */; };
 		DEBE47A2262C011B00DDDD20 /* PlantLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47A1262C011B00DDDD20 /* PlantLoader.swift */; };
+		DEBE47AA262C018B00DDDD20 /* RemotePlantLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47A9262C018B00DDDD20 /* RemotePlantLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		DEBE4787262BF9C800DDDD20 /* PlantRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRequest.swift; sourceTree = "<group>"; };
 		DEBE4799262C00D400DDDD20 /* PlantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantItem.swift; sourceTree = "<group>"; };
 		DEBE47A1262C011B00DDDD20 /* PlantLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLoader.swift; sourceTree = "<group>"; };
+		DEBE47A9262C018B00DDDD20 /* RemotePlantLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlantLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +248,7 @@
 			children = (
 				DEBE4787262BF9C800DDDD20 /* PlantRequest.swift */,
 				DEBE477F262BF5F700DDDD20 /* RemotePlantItem.swift */,
+				DEBE47A9262C018B00DDDD20 /* RemotePlantLoader.swift */,
 			);
 			path = Plant;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBE47AA262C018B00DDDD20 /* RemotePlantLoader.swift in Sources */,
 				DEBE4780262BF5F700DDDD20 /* RemotePlantItem.swift in Sources */,
 				DEBE46E6262BD66800DDDD20 /* ViewController.swift in Sources */,
 				DEBE4737262BE67700DDDD20 /* RequestAdapter.swift in Sources */,
