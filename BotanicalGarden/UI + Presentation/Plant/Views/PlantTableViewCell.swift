@@ -20,4 +20,8 @@ class PlantTableViewCell: UITableViewCell {
         locationLabel.text = location
         featureLabel.text = feature
     }
+    
+    func configure(imageURL: URL?) {
+        plantImageView.setImage(with: imageURL)
+    }
 }
