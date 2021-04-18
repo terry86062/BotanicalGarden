@@ -24,6 +24,7 @@
 		DEBE4754262BEAF000DDDD20 /* URLQueryDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4753262BEAF000DDDD20 /* URLQueryDataAdapter.swift */; };
 		DEBE4759262BEBDD00DDDD20 /* RequestContentAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4758262BEBDD00DDDD20 /* RequestContentAdapter.swift */; };
 		DEBE475F262BEDF500DDDD20 /* ResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE475E262BEDF500DDDD20 /* ResponseMapper.swift */; };
+		DEBE4767262BF0AC00DDDD20 /* RemoteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4766262BF0AC00DDDD20 /* RemoteLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		DEBE4753262BEAF000DDDD20 /* URLQueryDataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryDataAdapter.swift; sourceTree = "<group>"; };
 		DEBE4758262BEBDD00DDDD20 /* RequestContentAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestContentAdapter.swift; sourceTree = "<group>"; };
 		DEBE475E262BEDF500DDDD20 /* ResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMapper.swift; sourceTree = "<group>"; };
+		DEBE4766262BF0AC00DDDD20 /* RemoteLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 		DEBE4726262BE3D400DDDD20 /* RemoteLoader */ = {
 			isa = PBXGroup;
 			children = (
+				DEBE4766262BF0AC00DDDD20 /* RemoteLoader.swift */,
 				DEBE4727262BE3DF00DDDD20 /* Request */,
 				DEBE475D262BEDE800DDDD20 /* ResponseMapper */,
 				DEBE4747262BEA2500DDDD20 /* Error */,
@@ -349,6 +352,7 @@
 				DEBE4749262BEA3900DDDD20 /* NetworkingError.swift in Sources */,
 				DEBE4731262BE45A00DDDD20 /* HTTPMethod.swift in Sources */,
 				DEBE4722262BE0A200DDDD20 /* URLSessionHTTPClient.swift in Sources */,
+				DEBE4767262BF0AC00DDDD20 /* RemoteLoader.swift in Sources */,
 				DEBE46E2262BD66800DDDD20 /* AppDelegate.swift in Sources */,
 				DEBE4759262BEBDD00DDDD20 /* RequestContentAdapter.swift in Sources */,
 				DEBE471A262BDFD500DDDD20 /* HTTPClient.swift in Sources */,
