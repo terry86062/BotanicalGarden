@@ -77,10 +77,21 @@ extension PlantViewController: UITableViewDataSourcePrefetching {
             cell?.configure(imageURL: item.imageURL)
         }
     }
+    
+    func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {
+        indexPaths.forEach { indexPath in
+            let cell = tableView.cellForRow(at: indexPath) as? PlantTableViewCell
+            cell?.cancelDownloadImage()
+        }
+    }
 }
 
 // MARK: - UITableViewDelegate
 extension PlantViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        (cell as? PlantTableViewCell)?.cancelDownloadImage()
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let item = viewModel.outputs.items[indexPath.row]
