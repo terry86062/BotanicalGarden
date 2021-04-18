@@ -17,6 +17,7 @@
 		DEBE4704262BD66A00DDDD20 /* BotanicalGardenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4703262BD66A00DDDD20 /* BotanicalGardenUITests.swift */; };
 		DEBE471A262BDFD500DDDD20 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4719262BDFD500DDDD20 /* HTTPClient.swift */; };
 		DEBE4722262BE0A200DDDD20 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4721262BE0A200DDDD20 /* URLSessionHTTPClient.swift */; };
+		DEBE4729262BE3EC00DDDD20 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4728262BE3EC00DDDD20 /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DEBE4705262BD66A00DDDD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEBE4719262BDFD500DDDD20 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		DEBE4721262BE0A200DDDD20 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		DEBE4728262BE3EC00DDDD20 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		DEBE4717262BDF0200DDDD20 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				DEBE4726262BE3D400DDDD20 /* RemoteLoader */,
 				DEBE4718262BDFC000DDDD20 /* HTTPClient */,
 			);
 			path = Networking;
@@ -148,6 +151,22 @@
 				DEBE4721262BE0A200DDDD20 /* URLSessionHTTPClient.swift */,
 			);
 			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		DEBE4726262BE3D400DDDD20 /* RemoteLoader */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE4727262BE3DF00DDDD20 /* Request */,
+			);
+			path = RemoteLoader;
+			sourceTree = "<group>";
+		};
+		DEBE4727262BE3DF00DDDD20 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE4728262BE3EC00DDDD20 /* Request.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEBE46E6262BD66800DDDD20 /* ViewController.swift in Sources */,
+				DEBE4729262BE3EC00DDDD20 /* Request.swift in Sources */,
 				DEBE4722262BE0A200DDDD20 /* URLSessionHTTPClient.swift in Sources */,
 				DEBE46E2262BD66800DDDD20 /* AppDelegate.swift in Sources */,
 				DEBE471A262BDFD500DDDD20 /* HTTPClient.swift in Sources */,
