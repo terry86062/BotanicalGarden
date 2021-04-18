@@ -23,7 +23,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func configureWindow() {
-        let vc = PlantViewController()
+        let client = URLSessionHTTPClient()
+        let loader = BasicRemoteLoader(client: client)
+        let vc = PlantUIComposer.plantComposedWith(loader: loader)
 
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
