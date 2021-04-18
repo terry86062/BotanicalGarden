@@ -73,6 +73,15 @@ extension PlantViewController: UITableViewDelegate {
     // MARK: - UIScrollViewDelegate
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         changeNavigationPosition()
+        scrollToLoadMore()
+    }
+    
+    private func scrollToLoadMore() {
+        guard tableView.isDragging else { return }
+        let contentHeight = tableView.contentSize.height
+        if tableView.contentOffset.y > contentHeight - tableView.frame.height {
+            viewModel.inputs.loadPlant()
+        }
     }
     
     private func changeNavigationPosition() {
