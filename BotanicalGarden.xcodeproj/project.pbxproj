@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE88F036262C585800107012 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */; };
+		DE88F03F262C59A200107012 /* PlantUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F03E262C59A200107012 /* PlantUIComposer.swift */; };
 		DEBE46E2262BD66800DDDD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46E1262BD66800DDDD20 /* AppDelegate.swift */; };
 		DEBE46E4262BD66800DDDD20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46E3262BD66800DDDD20 /* SceneDelegate.swift */; };
 		DEBE46EB262BD66900DDDD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBE46EA262BD66900DDDD20 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
+		DE88F03E262C59A200107012 /* PlantUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantUIComposer.swift; sourceTree = "<group>"; };
 		DEBE46DE262BD66800DDDD20 /* BotanicalGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BotanicalGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBE46E1262BD66800DDDD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEBE46E3262BD66800DDDD20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,14 @@
 				DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */,
 			);
 			path = Thread;
+			sourceTree = "<group>";
+		};
+		DE88F03D262C598F00107012 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				DE88F03E262C59A200107012 /* PlantUIComposer.swift */,
+			);
+			path = Composers;
 			sourceTree = "<group>";
 		};
 		DEBE46D5262BD66800DDDD20 = {
@@ -321,6 +331,7 @@
 		DEBE47C0262C071A00DDDD20 /* Plant */ = {
 			isa = PBXGroup;
 			children = (
+				DE88F03D262C598F00107012 /* Composers */,
 				DEBE47C1262C073900DDDD20 /* Controllers */,
 				DEBE47C2262C074C00DDDD20 /* Views */,
 				DEBE47DE262C2B3400DDDD20 /* Models */,
@@ -507,6 +518,7 @@
 				DEBE47D3262C278C00DDDD20 /* PlantTableViewCell.swift in Sources */,
 				DEBE4780262BF5F700DDDD20 /* RemotePlantItem.swift in Sources */,
 				DEBE4737262BE67700DDDD20 /* RequestAdapter.swift in Sources */,
+				DE88F03F262C59A200107012 /* PlantUIComposer.swift in Sources */,
 				DEBE4754262BEAF000DDDD20 /* URLQueryDataAdapter.swift in Sources */,
 				DEBE47E6262C2BA300DDDD20 /* ViewModel.swift in Sources */,
 				DEBE475F262BEDF500DDDD20 /* ResponseMapper.swift in Sources */,
