@@ -13,4 +13,8 @@ extension UIImageView {
     func setImage(with url: URL?) {
         kf.setImage(with: url)
     }
+    
+    func cancelDownloadTask() {
+        kf.cancelDownloadTask()
+    }
 }
