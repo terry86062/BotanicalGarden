@@ -10,5 +10,6 @@ import Foundation
 protocol Request {
     
     var url: URL { get }
+    var method: HTTPMethod { get }
     var parameters: [String: Any] { get }
 }
