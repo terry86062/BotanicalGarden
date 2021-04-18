@@ -22,7 +22,7 @@ struct URLQueryDataAdapter: RequestAdapter {
         return req
     }
 
-    func encoded(url: URL) -> URL {
+    private func encoded(url: URL) -> URL {
         guard var components = URLComponents(url: url, resolvingAgainstBaseURL: true) else { return url }
         components.queryItems = parameters.map {
             URLQueryItem(name: $0.key, value: $0.value as? String)
