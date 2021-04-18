@@ -15,6 +15,7 @@ class PlantTableViewCell: UITableViewCell {
     @IBOutlet weak var featureLabel: UILabel!
     
     func configure(imageURL: URL?, name: String, location: String, feature: String) {
+        plantImageView.setImage(with: imageURL)
         nameLabel.text = name
         locationLabel.text = location
         featureLabel.text = feature
