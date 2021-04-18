@@ -16,6 +16,7 @@
 		DEBE46F9262BD66A00DDDD20 /* BotanicalGardenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46F8262BD66A00DDDD20 /* BotanicalGardenTests.swift */; };
 		DEBE4704262BD66A00DDDD20 /* BotanicalGardenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4703262BD66A00DDDD20 /* BotanicalGardenUITests.swift */; };
 		DEBE471A262BDFD500DDDD20 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4719262BDFD500DDDD20 /* HTTPClient.swift */; };
+		DEBE4722262BE0A200DDDD20 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4721262BE0A200DDDD20 /* URLSessionHTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DEBE4703262BD66A00DDDD20 /* BotanicalGardenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotanicalGardenUITests.swift; sourceTree = "<group>"; };
 		DEBE4705262BD66A00DDDD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEBE4719262BDFD500DDDD20 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		DEBE4721262BE0A200DDDD20 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				DEBE4719262BDFD500DDDD20 /* HTTPClient.swift */,
+				DEBE4721262BE0A200DDDD20 /* URLSessionHTTPClient.swift */,
 			);
 			path = HTTPClient;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEBE46E6262BD66800DDDD20 /* ViewController.swift in Sources */,
+				DEBE4722262BE0A200DDDD20 /* URLSessionHTTPClient.swift in Sources */,
 				DEBE46E2262BD66800DDDD20 /* AppDelegate.swift in Sources */,
 				DEBE471A262BDFD500DDDD20 /* HTTPClient.swift in Sources */,
 				DEBE46E4262BD66800DDDD20 /* SceneDelegate.swift in Sources */,
