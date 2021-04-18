@@ -11,7 +11,7 @@ protocol Request {
     
     associatedtype Mapper: ResponseMapper
     
-    var url: URL { get }
+    var urlStr: String { get }
     var method: HTTPMethod { get }
     var parameters: [String: Any] { get }
     
@@ -19,6 +19,10 @@ protocol Request {
 }
 
 extension Request {
+    
+    var url: URL? {
+        URL(string: urlStr)
+    }
 
     var adapters: [RequestAdapter] {
         return [
@@ -28,6 +32,9 @@ extension Request {
     }
     
     func buildRequest() throws -> URLRequest {
+        guard let url = url else {
+            throw NetworkingError.Request.invalidURL
+        }
         let request = URLRequest(url: url)
         return try adapters.reduce(request) { try $1.adapted(request: $0) }
     }
