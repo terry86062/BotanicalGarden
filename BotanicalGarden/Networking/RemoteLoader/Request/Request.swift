@@ -9,6 +9,8 @@ import Foundation
 
 protocol Request {
     
+    associatedtype Mapper: ResponseMapper
+    
     var url: URL { get }
     var method: HTTPMethod { get }
     var parameters: [String: Any] { get }
