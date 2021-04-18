@@ -12,4 +12,15 @@ protocol Request {
     var url: URL { get }
     var method: HTTPMethod { get }
     var parameters: [String: Any] { get }
+    
+    var adapters: [RequestAdapter] { get }
+}
+
+extension Request {
+
+    var adapters: [RequestAdapter] {
+        return [
+            method
+        ]
+    }
 }
