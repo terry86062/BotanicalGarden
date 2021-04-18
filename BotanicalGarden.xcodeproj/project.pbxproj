@@ -27,6 +27,7 @@
 		DEBE4767262BF0AC00DDDD20 /* RemoteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4766262BF0AC00DDDD20 /* RemoteLoader.swift */; };
 		DEBE476C262BF12C00DDDD20 /* BasicRemoteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE476B262BF12C00DDDD20 /* BasicRemoteLoader.swift */; };
 		DEBE4774262BF2BB00DDDD20 /* BasicResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4773262BF2BB00DDDD20 /* BasicResponseMapper.swift */; };
+		DEBE477A262BF56900DDDD20 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4779262BF56900DDDD20 /* Root.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		DEBE4766262BF0AC00DDDD20 /* RemoteLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoader.swift; sourceTree = "<group>"; };
 		DEBE476B262BF12C00DDDD20 /* BasicRemoteLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRemoteLoader.swift; sourceTree = "<group>"; };
 		DEBE4773262BF2BB00DDDD20 /* BasicResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicResponseMapper.swift; sourceTree = "<group>"; };
+		DEBE4779262BF56900DDDD20 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		DEBE4717262BDF0200DDDD20 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				DEBE4778262BF54400DDDD20 /* API */,
 				DEBE4726262BE3D400DDDD20 /* RemoteLoader */,
 				DEBE4718262BDFC000DDDD20 /* HTTPClient */,
 			);
@@ -218,6 +221,14 @@
 				DEBE4773262BF2BB00DDDD20 /* BasicResponseMapper.swift */,
 			);
 			path = ResponseMapper;
+			sourceTree = "<group>";
+		};
+		DEBE4778262BF54400DDDD20 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE4779262BF56900DDDD20 /* Root.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +370,7 @@
 				DEBE4749262BEA3900DDDD20 /* NetworkingError.swift in Sources */,
 				DEBE4731262BE45A00DDDD20 /* HTTPMethod.swift in Sources */,
 				DEBE4722262BE0A200DDDD20 /* URLSessionHTTPClient.swift in Sources */,
+				DEBE477A262BF56900DDDD20 /* Root.swift in Sources */,
 				DEBE4767262BF0AC00DDDD20 /* RemoteLoader.swift in Sources */,
 				DEBE476C262BF12C00DDDD20 /* BasicRemoteLoader.swift in Sources */,
 				DEBE46E2262BD66800DDDD20 /* AppDelegate.swift in Sources */,
