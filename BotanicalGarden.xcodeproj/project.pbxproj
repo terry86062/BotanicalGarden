@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE88F036262C585800107012 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */; };
 		DEBE46E2262BD66800DDDD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46E1262BD66800DDDD20 /* AppDelegate.swift */; };
 		DEBE46E4262BD66800DDDD20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46E3262BD66800DDDD20 /* SceneDelegate.swift */; };
 		DEBE46EB262BD66900DDDD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBE46EA262BD66900DDDD20 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		DEBE46DE262BD66800DDDD20 /* BotanicalGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BotanicalGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBE46E1262BD66800DDDD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEBE46E3262BD66800DDDD20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE88F034262C581C00107012 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
 		DEBE46D5262BD66800DDDD20 = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +311,7 @@
 			children = (
 				DEBE47D8262C29A000DDDD20 /* Helpers */,
 				DEBE47E4262C2B9100DDDD20 /* Protocol */,
+				DE88F034262C581C00107012 /* Thread */,
 				DEBE47C0262C071A00DDDD20 /* Plant */,
 				DEBE46EC262BD66900DDDD20 /* LaunchScreen.storyboard */,
 			);
@@ -492,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEBE47AA262C018B00DDDD20 /* RemotePlantLoader.swift in Sources */,
+				DE88F036262C585800107012 /* MainQueueDispatchDecorator.swift in Sources */,
 				DEBE47D3262C278C00DDDD20 /* PlantTableViewCell.swift in Sources */,
 				DEBE4780262BF5F700DDDD20 /* RemotePlantItem.swift in Sources */,
 				DEBE4737262BE67700DDDD20 /* RequestAdapter.swift in Sources */,
