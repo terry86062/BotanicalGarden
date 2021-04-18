@@ -28,6 +28,7 @@
 		DEBE476C262BF12C00DDDD20 /* BasicRemoteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE476B262BF12C00DDDD20 /* BasicRemoteLoader.swift */; };
 		DEBE4774262BF2BB00DDDD20 /* BasicResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4773262BF2BB00DDDD20 /* BasicResponseMapper.swift */; };
 		DEBE477A262BF56900DDDD20 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4779262BF56900DDDD20 /* Root.swift */; };
+		DEBE4780262BF5F700DDDD20 /* RemotePlantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE477F262BF5F700DDDD20 /* RemotePlantItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		DEBE476B262BF12C00DDDD20 /* BasicRemoteLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRemoteLoader.swift; sourceTree = "<group>"; };
 		DEBE4773262BF2BB00DDDD20 /* BasicResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicResponseMapper.swift; sourceTree = "<group>"; };
 		DEBE4779262BF56900DDDD20 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		DEBE477F262BF5F700DDDD20 /* RemotePlantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlantItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,8 +229,17 @@
 			isa = PBXGroup;
 			children = (
 				DEBE4779262BF56900DDDD20 /* Root.swift */,
+				DEBE477E262BF5CC00DDDD20 /* Plant */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		DEBE477E262BF5CC00DDDD20 /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE477F262BF5F700DDDD20 /* RemotePlantItem.swift */,
+			);
+			path = Plant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBE4780262BF5F700DDDD20 /* RemotePlantItem.swift in Sources */,
 				DEBE46E6262BD66800DDDD20 /* ViewController.swift in Sources */,
 				DEBE4737262BE67700DDDD20 /* RequestAdapter.swift in Sources */,
 				DEBE4754262BEAF000DDDD20 /* URLQueryDataAdapter.swift in Sources */,
