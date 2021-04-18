@@ -24,4 +24,8 @@ class PlantTableViewCell: UITableViewCell {
     func configure(imageURL: URL?) {
         plantImageView.setImage(with: imageURL)
     }
+    
+    func cancelDownloadImage() {
+        plantImageView.cancelDownloadTask()
+    }
 }
