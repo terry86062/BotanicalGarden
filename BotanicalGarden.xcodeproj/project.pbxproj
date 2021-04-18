@@ -33,6 +33,8 @@
 		DEBE47AA262C018B00DDDD20 /* RemotePlantLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47A9262C018B00DDDD20 /* RemotePlantLoader.swift */; };
 		DEBE47C5262C079900DDDD20 /* PlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47C3262C079900DDDD20 /* PlantViewController.swift */; };
 		DEBE47C6262C079900DDDD20 /* PlantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBE47C4262C079900DDDD20 /* PlantViewController.xib */; };
+		DEBE47D3262C278C00DDDD20 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47D1262C278C00DDDD20 /* PlantTableViewCell.swift */; };
+		DEBE47D4262C278C00DDDD20 /* PlantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBE47D2262C278C00DDDD20 /* PlantTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		DEBE47A9262C018B00DDDD20 /* RemotePlantLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlantLoader.swift; sourceTree = "<group>"; };
 		DEBE47C3262C079900DDDD20 /* PlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewController.swift; sourceTree = "<group>"; };
 		DEBE47C4262C079900DDDD20 /* PlantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantViewController.xib; sourceTree = "<group>"; };
+		DEBE47D1262C278C00DDDD20 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
+		DEBE47D2262C278C00DDDD20 /* PlantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +318,8 @@
 			isa = PBXGroup;
 			children = (
 				DEBE47C4262C079900DDDD20 /* PlantViewController.xib */,
+				DEBE47D1262C278C00DDDD20 /* PlantTableViewCell.swift */,
+				DEBE47D2262C278C00DDDD20 /* PlantTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -422,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEBE46EE262BD66900DDDD20 /* LaunchScreen.storyboard in Resources */,
+				DEBE47D4262C278C00DDDD20 /* PlantTableViewCell.xib in Resources */,
 				DEBE47C6262C079900DDDD20 /* PlantViewController.xib in Resources */,
 				DEBE46EB262BD66900DDDD20 /* Assets.xcassets in Resources */,
 			);
@@ -449,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEBE47AA262C018B00DDDD20 /* RemotePlantLoader.swift in Sources */,
+				DEBE47D3262C278C00DDDD20 /* PlantTableViewCell.swift in Sources */,
 				DEBE4780262BF5F700DDDD20 /* RemotePlantItem.swift in Sources */,
 				DEBE4737262BE67700DDDD20 /* RequestAdapter.swift in Sources */,
 				DEBE4754262BEAF000DDDD20 /* URLQueryDataAdapter.swift in Sources */,
