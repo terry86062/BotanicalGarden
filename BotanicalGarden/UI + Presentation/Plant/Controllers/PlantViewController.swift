@@ -24,21 +24,45 @@ final class PlantViewController: UIViewController {
     // MARK: - private property
     private let minTop: CGFloat = -180 + 8 + 19.5 + 8 // 19.5 為 label 高度，8 為 label 上下間距
     private var oldContentOffsetY: CGFloat = 0
+    private let viewModel: PlantViewModel
+    
+    // MARK: - init
+    init(viewModel: PlantViewModel) {
+        self.viewModel = viewModel
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - override func
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        binded()
+        viewModel.inputs.loadPlant()
+    }
+    
+    private func binded() {
+        var outputs = viewModel.outputs
+        
+        outputs.didLoadPlant = { [weak self] indexPaths in
+            self?.tableView.insertRows(at: indexPaths, with: .none)
+        }
     }
 }
 
 // MARK: - UITableViewDataSource
 extension PlantViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return viewModel.outputs.items.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(PlantTableViewCell.self, for: indexPath)
+        let item = viewModel.outputs.items[indexPath.row]
+        cell.configure(imageURL: item.imageURL, name: item.name, location: item.location, feature: item.feature)
         return cell
     }
 }
