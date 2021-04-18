@@ -38,6 +38,7 @@
 		DEBE47DA262C29C500DDDD20 /* UITableView+BotanicalGarden.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47D9262C29C500DDDD20 /* UITableView+BotanicalGarden.swift */; };
 		DEBE47E0262C2B5300DDDD20 /* PlantCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47DF262C2B5300DDDD20 /* PlantCellModel.swift */; };
 		DEBE47E6262C2BA300DDDD20 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47E5262C2BA300DDDD20 /* ViewModel.swift */; };
+		DEBE47EE262C2C0600DDDD20 /* PlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47ED262C2C0600DDDD20 /* PlantViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		DEBE47D9262C29C500DDDD20 /* UITableView+BotanicalGarden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+BotanicalGarden.swift"; sourceTree = "<group>"; };
 		DEBE47DF262C2B5300DDDD20 /* PlantCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCellModel.swift; sourceTree = "<group>"; };
 		DEBE47E5262C2BA300DDDD20 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		DEBE47ED262C2C0600DDDD20 /* PlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +346,7 @@
 		DEBE47DE262C2B3400DDDD20 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DEBE47ED262C2C0600DDDD20 /* PlantViewModel.swift */,
 				DEBE47DF262C2B5300DDDD20 /* PlantCellModel.swift */,
 			);
 			path = Models;
@@ -498,6 +501,7 @@
 				DEBE4729262BE3EC00DDDD20 /* Request.swift in Sources */,
 				DEBE47E0262C2B5300DDDD20 /* PlantCellModel.swift in Sources */,
 				DEBE47DA262C29C500DDDD20 /* UITableView+BotanicalGarden.swift in Sources */,
+				DEBE47EE262C2C0600DDDD20 /* PlantViewModel.swift in Sources */,
 				DEBE47A2262C011B00DDDD20 /* PlantLoader.swift in Sources */,
 				DEBE4774262BF2BB00DDDD20 /* BasicResponseMapper.swift in Sources */,
 				DEBE4788262BF9C800DDDD20 /* PlantRequest.swift in Sources */,
