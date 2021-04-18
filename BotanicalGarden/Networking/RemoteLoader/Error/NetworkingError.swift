@@ -10,6 +10,7 @@ import Foundation
 enum NetworkingError {
 
     enum Request: Error {
+        case invalidURL
         case missingURL
         case buildRequest
     }
