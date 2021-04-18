@@ -20,7 +20,8 @@ extension Request {
 
     var adapters: [RequestAdapter] {
         return [
-            method
+            method,
+            RequestContentAdapter(method: method, content: parameters)
         ]
     }
     
