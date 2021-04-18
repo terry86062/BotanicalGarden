@@ -16,6 +16,7 @@ final class PlantViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.dataSource = self
+            tableView.prefetchDataSource = self
             tableView.delegate = self
             tableView.register(PlantTableViewCell.self)
         }
@@ -64,6 +65,17 @@ extension PlantViewController: UITableViewDataSource {
         let item = viewModel.outputs.items[indexPath.row]
         cell.configure(imageURL: item.imageURL, name: item.name, location: item.location, feature: item.feature)
         return cell
+    }
+}
+
+// MARK: - UITableViewDataSourcePrefetching
+extension PlantViewController: UITableViewDataSourcePrefetching {
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        indexPaths.forEach { indexPath in
+            let cell = tableView.cellForRow(at: indexPath) as? PlantTableViewCell
+            let item = viewModel.outputs.items[indexPath.row]
+            cell?.configure(imageURL: item.imageURL)
+        }
     }
 }
 
