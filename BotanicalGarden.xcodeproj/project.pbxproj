@@ -35,6 +35,7 @@
 		DEBE47C6262C079900DDDD20 /* PlantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBE47C4262C079900DDDD20 /* PlantViewController.xib */; };
 		DEBE47D3262C278C00DDDD20 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47D1262C278C00DDDD20 /* PlantTableViewCell.swift */; };
 		DEBE47D4262C278C00DDDD20 /* PlantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBE47D2262C278C00DDDD20 /* PlantTableViewCell.xib */; };
+		DEBE47DA262C29C500DDDD20 /* UITableView+BotanicalGarden.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47D9262C29C500DDDD20 /* UITableView+BotanicalGarden.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		DEBE47C4262C079900DDDD20 /* PlantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantViewController.xib; sourceTree = "<group>"; };
 		DEBE47D1262C278C00DDDD20 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
 		DEBE47D2262C278C00DDDD20 /* PlantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantTableViewCell.xib; sourceTree = "<group>"; };
+		DEBE47D9262C29C500DDDD20 /* UITableView+BotanicalGarden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+BotanicalGarden.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +293,7 @@
 		DEBE47B9262C05BB00DDDD20 /* UI + Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEBE47D8262C29A000DDDD20 /* Helpers */,
 				DEBE47C0262C071A00DDDD20 /* Plant */,
 				DEBE46EC262BD66900DDDD20 /* LaunchScreen.storyboard */,
 			);
@@ -322,6 +325,14 @@
 				DEBE47D2262C278C00DDDD20 /* PlantTableViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DEBE47D8262C29A000DDDD20 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE47D9262C29C500DDDD20 /* UITableView+BotanicalGarden.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -462,6 +473,7 @@
 				DEBE4754262BEAF000DDDD20 /* URLQueryDataAdapter.swift in Sources */,
 				DEBE475F262BEDF500DDDD20 /* ResponseMapper.swift in Sources */,
 				DEBE4729262BE3EC00DDDD20 /* Request.swift in Sources */,
+				DEBE47DA262C29C500DDDD20 /* UITableView+BotanicalGarden.swift in Sources */,
 				DEBE47A2262C011B00DDDD20 /* PlantLoader.swift in Sources */,
 				DEBE4774262BF2BB00DDDD20 /* BasicResponseMapper.swift in Sources */,
 				DEBE4788262BF9C800DDDD20 /* PlantRequest.swift in Sources */,
