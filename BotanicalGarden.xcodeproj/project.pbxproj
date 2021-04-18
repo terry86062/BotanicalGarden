@@ -23,6 +23,7 @@
 		DEBE4749262BEA3900DDDD20 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4748262BEA3900DDDD20 /* NetworkingError.swift */; };
 		DEBE4754262BEAF000DDDD20 /* URLQueryDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4753262BEAF000DDDD20 /* URLQueryDataAdapter.swift */; };
 		DEBE4759262BEBDD00DDDD20 /* RequestContentAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4758262BEBDD00DDDD20 /* RequestContentAdapter.swift */; };
+		DEBE475F262BEDF500DDDD20 /* ResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE475E262BEDF500DDDD20 /* ResponseMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		DEBE4748262BEA3900DDDD20 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 		DEBE4753262BEAF000DDDD20 /* URLQueryDataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryDataAdapter.swift; sourceTree = "<group>"; };
 		DEBE4758262BEBDD00DDDD20 /* RequestContentAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestContentAdapter.swift; sourceTree = "<group>"; };
+		DEBE475E262BEDF500DDDD20 /* ResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				DEBE4727262BE3DF00DDDD20 /* Request */,
+				DEBE475D262BEDE800DDDD20 /* ResponseMapper */,
 				DEBE4747262BEA2500DDDD20 /* Error */,
 			);
 			path = RemoteLoader;
@@ -198,6 +201,14 @@
 				DEBE4748262BEA3900DDDD20 /* NetworkingError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		DEBE475D262BEDE800DDDD20 /* ResponseMapper */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE475E262BEDF500DDDD20 /* ResponseMapper.swift */,
+			);
+			path = ResponseMapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +344,7 @@
 				DEBE46E6262BD66800DDDD20 /* ViewController.swift in Sources */,
 				DEBE4737262BE67700DDDD20 /* RequestAdapter.swift in Sources */,
 				DEBE4754262BEAF000DDDD20 /* URLQueryDataAdapter.swift in Sources */,
+				DEBE475F262BEDF500DDDD20 /* ResponseMapper.swift in Sources */,
 				DEBE4729262BE3EC00DDDD20 /* Request.swift in Sources */,
 				DEBE4749262BEA3900DDDD20 /* NetworkingError.swift in Sources */,
 				DEBE4731262BE45A00DDDD20 /* HTTPMethod.swift in Sources */,
