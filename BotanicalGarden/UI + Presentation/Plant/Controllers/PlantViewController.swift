@@ -17,6 +17,7 @@ final class PlantViewController: UIViewController {
         didSet {
             tableView.dataSource = self
             tableView.delegate = self
+            tableView.register(PlantTableViewCell.self)
         }
     }
 
@@ -37,7 +38,8 @@ extension PlantViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(PlantTableViewCell.self, for: indexPath)
+        return cell
     }
 }
 
