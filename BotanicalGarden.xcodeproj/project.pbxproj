@@ -141,9 +141,8 @@
 				DEBE46E7262BD66800DDDD20 /* Main.storyboard */,
 				DEBE4797262C00A200DDDD20 /* Feature */,
 				DEBE4717262BDF0200DDDD20 /* Networking */,
-				DEBE46EA262BD66900DDDD20 /* Assets.xcassets */,
+				DEBE47AE262C045B00DDDD20 /* Supporting Files */,
 				DEBE46EC262BD66900DDDD20 /* LaunchScreen.storyboard */,
-				DEBE46EF262BD66900DDDD20 /* Info.plist */,
 			);
 			path = BotanicalGarden;
 			sourceTree = "<group>";
@@ -268,6 +267,15 @@
 				DEBE4799262C00D400DDDD20 /* PlantItem.swift */,
 			);
 			path = Plant;
+			sourceTree = "<group>";
+		};
+		DEBE47AE262C045B00DDDD20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE46EF262BD66900DDDD20 /* Info.plist */,
+				DEBE46EA262BD66900DDDD20 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -598,7 +606,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QPTS7A9V9F;
-				INFOPLIST_FILE = BotanicalGarden/Info.plist;
+				INFOPLIST_FILE = "BotanicalGarden/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -617,7 +625,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QPTS7A9V9F;
-				INFOPLIST_FILE = BotanicalGarden/Info.plist;
+				INFOPLIST_FILE = "BotanicalGarden/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
