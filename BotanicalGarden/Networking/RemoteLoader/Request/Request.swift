@@ -23,4 +23,9 @@ extension Request {
             method
         ]
     }
+    
+    func buildRequest() throws -> URLRequest {
+        let request = URLRequest(url: url)
+        return try adapters.reduce(request) { try $1.adapted(request: $0) }
+    }
 }
