@@ -29,6 +29,7 @@
 		DEBE4774262BF2BB00DDDD20 /* BasicResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4773262BF2BB00DDDD20 /* BasicResponseMapper.swift */; };
 		DEBE477A262BF56900DDDD20 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4779262BF56900DDDD20 /* Root.swift */; };
 		DEBE4780262BF5F700DDDD20 /* RemotePlantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE477F262BF5F700DDDD20 /* RemotePlantItem.swift */; };
+		DEBE4788262BF9C800DDDD20 /* PlantRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4787262BF9C800DDDD20 /* PlantRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		DEBE4773262BF2BB00DDDD20 /* BasicResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicResponseMapper.swift; sourceTree = "<group>"; };
 		DEBE4779262BF56900DDDD20 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		DEBE477F262BF5F700DDDD20 /* RemotePlantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlantItem.swift; sourceTree = "<group>"; };
+		DEBE4787262BF9C800DDDD20 /* PlantRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 		DEBE477E262BF5CC00DDDD20 /* Plant */ = {
 			isa = PBXGroup;
 			children = (
+				DEBE4787262BF9C800DDDD20 /* PlantRequest.swift */,
 				DEBE477F262BF5F700DDDD20 /* RemotePlantItem.swift */,
 			);
 			path = Plant;
@@ -379,6 +382,7 @@
 				DEBE475F262BEDF500DDDD20 /* ResponseMapper.swift in Sources */,
 				DEBE4729262BE3EC00DDDD20 /* Request.swift in Sources */,
 				DEBE4774262BF2BB00DDDD20 /* BasicResponseMapper.swift in Sources */,
+				DEBE4788262BF9C800DDDD20 /* PlantRequest.swift in Sources */,
 				DEBE4749262BEA3900DDDD20 /* NetworkingError.swift in Sources */,
 				DEBE4731262BE45A00DDDD20 /* HTTPMethod.swift in Sources */,
 				DEBE4722262BE0A200DDDD20 /* URLSessionHTTPClient.swift in Sources */,
