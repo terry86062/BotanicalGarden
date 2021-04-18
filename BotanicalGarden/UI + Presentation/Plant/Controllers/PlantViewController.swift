@@ -70,6 +70,16 @@ extension PlantViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 extension PlantViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let item = viewModel.outputs.items[indexPath.row]
+        return item.height
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        let item = viewModel.outputs.items[indexPath.row]
+        return item.height
+    }
+    
     // MARK: - UIScrollViewDelegate
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         changeNavigationPosition()
