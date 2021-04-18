@@ -10,3 +10,12 @@ import Foundation
 enum HTTPMethod: String {
     case get = "GET"
 }
+
+extension HTTPMethod: RequestAdapter {
+    
+    func adapted(request: URLRequest) throws -> URLRequest {
+        var req = request
+        req.httpMethod = self.rawValue
+        return req
+    }
+}
