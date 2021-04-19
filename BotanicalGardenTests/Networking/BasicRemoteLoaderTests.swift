@@ -25,6 +25,18 @@ class BasicRemoteLoaderTests: XCTestCase {
         
         XCTAssertEqual(client.requestedURLRequests, [urlRequest])
     }
+    
+    func test_loadTwice_requestsDataFromURLRequestTwice() {
+        let (sut, client) = makeSUT()
+        
+        let request = PlantRequest(offset: 0)
+        sut.load(from: request) { _ in }
+        sut.load(from: request) { _ in }
+        
+        let urlRequest = try! request.buildRequest()
+        
+        XCTAssertEqual(client.requestedURLRequests, [urlRequest, urlRequest])
+    }
 
     // MARK: - Helpers
     private func makeSUT() -> (sut: BasicRemoteLoader, client: HTTPClientSpy) {
