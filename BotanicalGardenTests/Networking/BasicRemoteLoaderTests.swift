@@ -37,6 +37,25 @@ class BasicRemoteLoaderTests: XCTestCase {
         
         XCTAssertEqual(client.requestedURLRequests, [urlRequest, urlRequest])
     }
+    
+    func test_load_deliversErrorOnClientError() {
+        let (sut, client) = makeSUT()
+        
+        let clientError = NSError(domain: "Test", code: 0)
+        
+        let request = PlantRequest(offset: 0)
+        sut.load(from: request) { result in
+            switch result {
+            case .success(_):
+                XCTFail("Expected failure with \(clientError), but success")
+                
+            case let .failure(error):
+                XCTAssertEqual(error as NSError, clientError)
+            }
+        }
+        
+        client.complete(with: clientError)
+    }
 
     // MARK: - Helpers
     private func makeSUT() -> (sut: BasicRemoteLoader, client: HTTPClientSpy) {
@@ -54,6 +73,10 @@ class BasicRemoteLoaderTests: XCTestCase {
         
         func get(from request: URLRequest, completion: @escaping (HTTPClient.Result) -> Void) {
             messages.append((request, completion))
+        }
+        
+        func complete(with error: Error, at index: Int = 0) {
+            messages[index].completion(.failure(error))
         }
     }
 }
