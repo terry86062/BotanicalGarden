@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum NetworkingError {
+public enum NetworkingError {
 
     enum Request: Error {
         case missingRequest
@@ -15,7 +15,7 @@ enum NetworkingError {
         case missingURL
     }
     
-    enum Response: Error {
+    public enum Response: Error {
         case invalidData
     }
 }
