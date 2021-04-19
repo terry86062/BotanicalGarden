@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE630655262DE925001C2401 /* BasicRemoteLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE630654262DE925001C2401 /* BasicRemoteLoaderTests.swift */; };
 		DE88F036262C585800107012 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */; };
 		DE88F03F262C59A200107012 /* PlantUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F03E262C59A200107012 /* PlantUIComposer.swift */; };
 		DE88F04D262C663B00107012 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DE88F04C262C663B00107012 /* Kingfisher */; };
@@ -64,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE630654262DE925001C2401 /* BasicRemoteLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRemoteLoaderTests.swift; sourceTree = "<group>"; };
 		DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		DE88F03E262C59A200107012 /* PlantUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantUIComposer.swift; sourceTree = "<group>"; };
 		DE88F053262C67A200107012 /* KingfisherWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherWrapper.swift; sourceTree = "<group>"; };
@@ -134,6 +136,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE630653262DE8E8001C2401 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DE630654262DE925001C2401 /* BasicRemoteLoaderTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		DE88F034262C581C00107012 /* Thread */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +212,7 @@
 		DEBE46F7262BD66A00DDDD20 /* BotanicalGardenTests */ = {
 			isa = PBXGroup;
 			children = (
+				DE630653262DE8E8001C2401 /* Networking */,
 				DEBE46FA262BD66A00DDDD20 /* Info.plist */,
 			);
 			path = BotanicalGardenTests;
@@ -479,6 +490,7 @@
 					};
 					DEBE46F3262BD66900DDDD20 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = DEBE46DD262BD66800DDDD20;
 					};
 					DEBE46FE262BD66A00DDDD20 = {
@@ -581,6 +593,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE630655262DE925001C2401 /* BasicRemoteLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,6 +791,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8QRU3Z535;
 				INFOPLIST_FILE = BotanicalGardenTests/Info.plist;
@@ -789,6 +803,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.terry.BotanicalGardenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BotanicalGarden.app/BotanicalGarden";
@@ -800,6 +815,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8QRU3Z535;
 				INFOPLIST_FILE = BotanicalGardenTests/Info.plist;
