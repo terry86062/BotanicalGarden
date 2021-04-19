@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RemotePlantItem: Decodable {
+public struct RemotePlantItem: Decodable {
     let name: String
     let location: String
     let feature: String

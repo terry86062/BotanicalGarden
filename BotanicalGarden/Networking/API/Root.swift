@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Root<T: Decodable>: Decodable {
+public struct Root<T: Decodable>: Decodable {
     let result: Result
 
     struct Result: Decodable {

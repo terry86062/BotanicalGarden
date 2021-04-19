@@ -7,13 +7,13 @@
 
 import Foundation
 
-enum HTTPMethod: String {
+public enum HTTPMethod: String {
     case get = "GET"
 }
 
 extension HTTPMethod: RequestAdapter {
     
-    func adapted(request: URLRequest) throws -> URLRequest {
+    public func adapted(request: URLRequest) throws -> URLRequest {
         var req = request
         req.httpMethod = self.rawValue
         return req

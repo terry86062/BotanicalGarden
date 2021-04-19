@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct PlantRequest: Request {
+public struct PlantRequest: Request {
 
-    typealias Mapper = BasicResponseMapper<Root<[RemotePlantItem]>>
+    public typealias Mapper = BasicResponseMapper<Root<[RemotePlantItem]>>
 
-    let urlStr = "https://data.taipei/api/v1/dataset/f18de02f-b6c9-47c0-8cda-50efad621c14"
-    let method = HTTPMethod.get
+    public let urlStr = "https://data.taipei/api/v1/dataset/f18de02f-b6c9-47c0-8cda-50efad621c14"
+    public let method = HTTPMethod.get
 
-    var parameters: [String: Any] {
+    public var parameters: [String: Any] {
         return [
             "scope": "resourceAquire",
             "limit": "\(limit)",
@@ -24,4 +24,8 @@ struct PlantRequest: Request {
 
     let limit: Int = 20
     let offset: Int
+    
+    public init(offset: Int) {
+        self.offset = offset
+    }
 }

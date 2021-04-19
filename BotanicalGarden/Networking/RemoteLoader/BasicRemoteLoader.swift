@@ -14,7 +14,7 @@ public final class BasicRemoteLoader: RemoteLoader {
         self.client = client
     }
 
-    func load<Req: Request>(
+    public func load<Req: Request>(
         from request: Req,
         completion: @escaping (Result<Req.Mapper.Response, Error>) -> Void
     ) {

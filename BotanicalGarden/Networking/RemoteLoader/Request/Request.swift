@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Request {
+public protocol Request {
     
     associatedtype Mapper: ResponseMapper
     
@@ -18,7 +18,7 @@ protocol Request {
     var adapters: [RequestAdapter] { get }
 }
 
-extension Request {
+public extension Request {
     
     var url: URL? {
         URL(string: urlStr)

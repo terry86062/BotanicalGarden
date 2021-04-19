@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ResponseMapper {
+public protocol ResponseMapper {
     associatedtype Response: Decodable
 
     static func map(_ data: Data, from response: HTTPURLResponse) throws -> Response
