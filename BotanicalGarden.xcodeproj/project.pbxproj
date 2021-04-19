@@ -17,7 +17,6 @@
 		DEBE46E4262BD66800DDDD20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46E3262BD66800DDDD20 /* SceneDelegate.swift */; };
 		DEBE46EB262BD66900DDDD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBE46EA262BD66900DDDD20 /* Assets.xcassets */; };
 		DEBE46EE262BD66900DDDD20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBE46EC262BD66900DDDD20 /* LaunchScreen.storyboard */; };
-		DEBE46F9262BD66A00DDDD20 /* BotanicalGardenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE46F8262BD66A00DDDD20 /* BotanicalGardenTests.swift */; };
 		DEBE4704262BD66A00DDDD20 /* BotanicalGardenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4703262BD66A00DDDD20 /* BotanicalGardenUITests.swift */; };
 		DEBE471A262BDFD500DDDD20 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4719262BDFD500DDDD20 /* HTTPClient.swift */; };
 		DEBE4722262BE0A200DDDD20 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4721262BE0A200DDDD20 /* URLSessionHTTPClient.swift */; };
@@ -77,7 +76,6 @@
 		DEBE46ED262BD66900DDDD20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEBE46EF262BD66900DDDD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEBE46F4262BD66900DDDD20 /* BotanicalGardenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotanicalGardenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEBE46F8262BD66A00DDDD20 /* BotanicalGardenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotanicalGardenTests.swift; sourceTree = "<group>"; };
 		DEBE46FA262BD66A00DDDD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEBE46FF262BD66A00DDDD20 /* BotanicalGardenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotanicalGardenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBE4703262BD66A00DDDD20 /* BotanicalGardenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotanicalGardenUITests.swift; sourceTree = "<group>"; };
@@ -204,7 +202,6 @@
 		DEBE46F7262BD66A00DDDD20 /* BotanicalGardenTests */ = {
 			isa = PBXGroup;
 			children = (
-				DEBE46F8262BD66A00DDDD20 /* BotanicalGardenTests.swift */,
 				DEBE46FA262BD66A00DDDD20 /* Info.plist */,
 			);
 			path = BotanicalGardenTests;
@@ -584,7 +581,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEBE46F9262BD66A00DDDD20 /* BotanicalGardenTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
