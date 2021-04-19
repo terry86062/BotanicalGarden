@@ -7,10 +7,10 @@
 
 import Foundation
 
-final class BasicRemoteLoader: RemoteLoader {
+public final class BasicRemoteLoader: RemoteLoader {
     private let client: HTTPClient
 
-    init(client: HTTPClient) {
+    public init(client: HTTPClient) {
         self.client = client
     }
 
