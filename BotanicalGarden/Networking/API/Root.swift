@@ -8,9 +8,9 @@
 import Foundation
 
 public struct Root<T: Decodable>: Decodable {
-    let result: Result
+    public let result: Result
 
-    struct Result: Decodable {
-        let results: T
+    public struct Result: Decodable {
+        public let results: T
     }
 }

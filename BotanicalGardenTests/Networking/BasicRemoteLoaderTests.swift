@@ -79,6 +79,32 @@ class BasicRemoteLoaderTests: XCTestCase {
             client.complete(withStatusCode: code, data: json, at: index)
         }
     }
+    
+    func test_load_deliversItemsOn200HTTPResponseWithJSONItems() {
+        let (sut, client) = makeSUT()
+
+        let item = RemotePlantItem(name: "", location: "", feature: "", imageLink: "")
+        let json = [
+            "F_Name_Ch": "",
+            "F_Location": "",
+            "F_Feature": "",
+            "F_Pic01_URL": ""
+        ]
+
+        let request = PlantRequest(offset: 0)
+        sut.load(from: request) { result in
+            switch result {
+            case let .success(resultItem):
+                XCTAssertEqual(resultItem.result.results, [item])
+
+            case .failure(_):
+                XCTFail("Expected success with \([item]), but failure")
+            }
+        }
+
+        let jsonData = makeItemsJSON([json])
+        client.complete(withStatusCode: 200, data: jsonData)
+    }
 
     // MARK: - Helpers
     private func makeSUT() -> (sut: BasicRemoteLoader, client: HTTPClientSpy) {

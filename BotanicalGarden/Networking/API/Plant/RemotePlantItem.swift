@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct RemotePlantItem: Decodable {
+public struct RemotePlantItem: Decodable, Equatable {
     let name: String
     let location: String
     let feature: String
@@ -18,5 +18,12 @@ public struct RemotePlantItem: Decodable {
         case location = "F_Location"
         case feature = "F_Feature"
         case imageLink = "F_Pic01_URL"
+    }
+    
+    public init(name: String, location: String, feature: String, imageLink: String) {
+        self.name = name
+        self.location = location
+        self.feature = feature
+        self.imageLink = imageLink
     }
 }
