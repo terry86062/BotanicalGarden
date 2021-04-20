@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol PlantViewModelInputs {
+public protocol PlantViewModelInputs {
     func loadPlant()
 }
 
-protocol PlantViewModelOutputs {
+public protocol PlantViewModelOutputs {
     var items: [PlantCellModel] { get }
     var didLoadPlant: (([IndexPath]) -> Void)? { get set }
 }
@@ -24,11 +24,11 @@ public final class PlantViewModel: ViewModel, PlantViewModelInputs, PlantViewMod
         self.loader = loader
     }
     
-    var inputs: PlantViewModelInputs { return self }
-    var outputs: PlantViewModelOutputs { return self }
+    public var inputs: PlantViewModelInputs { return self }
+    public var outputs: PlantViewModelOutputs { return self }
     
     // MARK: - outputs
-    var items: [PlantCellModel] = []
+    public var items: [PlantCellModel] = []
     public var didLoadPlant: (([IndexPath]) -> Void)?
 
     // MARK: - inputs

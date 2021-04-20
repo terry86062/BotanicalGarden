@@ -10,4 +10,28 @@ import BotanicalGarden
 
 class PlantViewControllerTests: XCTestCase {
 
+    func test_loadPlantActions_requestPlantFromViewModel() {
+        let vm = PlantViewModelSpy()
+        let sut = PlantViewController(inputs: vm.inputs, outputs: vm.outputs)
+
+        XCTAssertEqual(vm.loadPlantCallCount, 0)
+
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(vm.loadPlantCallCount, 1)
+    }
+    
+    // MARK: - Helpers
+    private class PlantViewModelSpy: ViewModel, PlantViewModelInputs, PlantViewModelOutputs {
+        var inputs: PlantViewModelInputs { return self }
+        var outputs: PlantViewModelOutputs { return self }
+
+        var items: [PlantCellModel] = []
+        var didLoadPlant: (([IndexPath]) -> Void)?
+
+        func loadPlant() {
+            loadPlantCallCount += 1
+        }
+
+        var loadPlantCallCount = 0
+    }
 }

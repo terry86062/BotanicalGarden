@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct PlantCellModel {
+public struct PlantCellModel {
     let name: String
     let location: String
     let feature: String

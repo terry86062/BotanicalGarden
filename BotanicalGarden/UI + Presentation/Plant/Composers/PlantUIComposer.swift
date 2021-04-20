@@ -12,7 +12,7 @@ final class PlantUIComposer {
     static func plantComposedWith(loader: RemoteLoader) -> PlantViewController {
         let plantLoader = RemotePlantLoader(loader: loader)
         let vm = PlantViewModel(loader: MainQueueDispatchDecorator(decoratee: plantLoader))
-        let vc = PlantViewController(viewModel: vm)
+        let vc = PlantViewController(inputs: vm.inputs, outputs: vm.outputs)
         return vc
     }
 }

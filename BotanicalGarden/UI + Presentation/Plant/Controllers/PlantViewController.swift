@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class PlantViewController: UIViewController {
+public final class PlantViewController: UIViewController {
     
     // MARK: - IBOutlet
     @IBOutlet weak var navigationTopConstraint: NSLayoutConstraint!
@@ -25,11 +25,13 @@ final class PlantViewController: UIViewController {
     // MARK: - private property
     private let minTop: CGFloat = -180 + 8 + 19.5 + 8 // 19.5 為 label 高度，8 為 label 上下間距
     private var oldContentOffsetY: CGFloat = 0
-    private let viewModel: PlantViewModel
+    private var viewModelInputs: PlantViewModelInputs
+    private var viewModelOutputs: PlantViewModelOutputs
     
     // MARK: - init
-    init(viewModel: PlantViewModel) {
-        self.viewModel = viewModel
+    public init(inputs: PlantViewModelInputs, outputs: PlantViewModelOutputs) {
+        self.viewModelInputs = inputs
+        self.viewModelOutputs = outputs
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -38,17 +40,15 @@ final class PlantViewController: UIViewController {
     }
     
     // MARK: - override func
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         binded()
-        viewModel.inputs.loadPlant()
+        viewModelInputs.loadPlant()
     }
     
     private func binded() {
-        var outputs = viewModel.outputs
-        
-        outputs.didLoadPlant = { [weak self] indexPaths in
+        viewModelOutputs.didLoadPlant = { [weak self] indexPaths in
             self?.tableView.insertRows(at: indexPaths, with: .none)
         }
     }
@@ -56,13 +56,13 @@ final class PlantViewController: UIViewController {
 
 // MARK: - UITableViewDataSource
 extension PlantViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.outputs.items.count
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModelOutputs.items.count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(PlantTableViewCell.self, for: indexPath)
-        let item = viewModel.outputs.items[indexPath.row]
+        let item = viewModelOutputs.items[indexPath.row]
         cell.configure(imageURL: item.imageURL, name: item.name, location: item.location, feature: item.feature)
         return cell
     }
@@ -70,15 +70,15 @@ extension PlantViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDataSourcePrefetching
 extension PlantViewController: UITableViewDataSourcePrefetching {
-    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+    public func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
         indexPaths.forEach { indexPath in
             let cell = tableView.cellForRow(at: indexPath) as? PlantTableViewCell
-            let item = viewModel.outputs.items[indexPath.row]
+            let item = viewModelOutputs.items[indexPath.row]
             cell?.configure(imageURL: item.imageURL)
         }
     }
     
-    func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {
+    public func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {
         indexPaths.forEach { indexPath in
             let cell = tableView.cellForRow(at: indexPath) as? PlantTableViewCell
             cell?.cancelDownloadImage()
@@ -89,22 +89,22 @@ extension PlantViewController: UITableViewDataSourcePrefetching {
 // MARK: - UITableViewDelegate
 extension PlantViewController: UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         (cell as? PlantTableViewCell)?.cancelDownloadImage()
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let item = viewModel.outputs.items[indexPath.row]
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let item = viewModelOutputs.items[indexPath.row]
         return item.height
     }
     
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        let item = viewModel.outputs.items[indexPath.row]
+    public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        let item = viewModelOutputs.items[indexPath.row]
         return item.height
     }
     
     // MARK: - UIScrollViewDelegate
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         changeNavigationPosition()
         scrollToLoadMore()
     }
@@ -113,7 +113,7 @@ extension PlantViewController: UITableViewDelegate {
         guard tableView.isDragging else { return }
         let contentHeight = tableView.contentSize.height
         if tableView.contentOffset.y > contentHeight - tableView.frame.height {
-            viewModel.inputs.loadPlant()
+            viewModelInputs.loadPlant()
         }
     }
     
@@ -137,12 +137,12 @@ extension PlantViewController: UITableViewDelegate {
         oldContentOffsetY = tableView.contentOffset.y
     }
     
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         guard decelerate == false else { return }
         setNavigationToPosition()
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         setNavigationToPosition()
     }
 
