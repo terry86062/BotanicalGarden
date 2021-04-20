@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9592E9DF262E967800C2E05B /* PlantViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592E9DE262E967800C2E05B /* PlantViewModelTests.swift */; };
+		9592E9E7262EB90300C2E05B /* PlantViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592E9E6262EB90300C2E05B /* PlantViewControllerTests.swift */; };
 		DE630655262DE925001C2401 /* BasicRemoteLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE630654262DE925001C2401 /* BasicRemoteLoaderTests.swift */; };
 		DE88F036262C585800107012 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */; };
 		DE88F03F262C59A200107012 /* PlantUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F03E262C59A200107012 /* PlantUIComposer.swift */; };
@@ -67,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		9592E9DE262E967800C2E05B /* PlantViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModelTests.swift; sourceTree = "<group>"; };
+		9592E9E6262EB90300C2E05B /* PlantViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewControllerTests.swift; sourceTree = "<group>"; };
 		DE630654262DE925001C2401 /* BasicRemoteLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRemoteLoaderTests.swift; sourceTree = "<group>"; };
 		DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		DE88F03E262C59A200107012 /* PlantUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantUIComposer.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		9592E9DD262E965200C2E05B /* Plant */ = {
 			isa = PBXGroup;
 			children = (
+				9592E9E6262EB90300C2E05B /* PlantViewControllerTests.swift */,
 				9592E9DE262E967800C2E05B /* PlantViewModelTests.swift */,
 			);
 			path = Plant;
@@ -612,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9592E9E7262EB90300C2E05B /* PlantViewControllerTests.swift in Sources */,
 				9592E9DF262E967800C2E05B /* PlantViewModelTests.swift in Sources */,
 				DE630655262DE925001C2401 /* BasicRemoteLoaderTests.swift in Sources */,
 			);
