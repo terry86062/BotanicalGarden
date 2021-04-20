@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9592E9DF262E967800C2E05B /* PlantViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592E9DE262E967800C2E05B /* PlantViewModelTests.swift */; };
 		DE630655262DE925001C2401 /* BasicRemoteLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE630654262DE925001C2401 /* BasicRemoteLoaderTests.swift */; };
 		DE88F036262C585800107012 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */; };
 		DE88F03F262C59A200107012 /* PlantUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F03E262C59A200107012 /* PlantUIComposer.swift */; };
@@ -65,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9592E9DE262E967800C2E05B /* PlantViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModelTests.swift; sourceTree = "<group>"; };
 		DE630654262DE925001C2401 /* BasicRemoteLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRemoteLoaderTests.swift; sourceTree = "<group>"; };
 		DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		DE88F03E262C59A200107012 /* PlantUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantUIComposer.swift; sourceTree = "<group>"; };
@@ -136,6 +138,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9592E9DC262E963F00C2E05B /* UI + Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9592E9DD262E965200C2E05B /* Plant */,
+			);
+			path = "UI + Presentation";
+			sourceTree = "<group>";
+		};
+		9592E9DD262E965200C2E05B /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				9592E9DE262E967800C2E05B /* PlantViewModelTests.swift */,
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
 		DE630653262DE8E8001C2401 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +230,7 @@
 		DEBE46F7262BD66A00DDDD20 /* BotanicalGardenTests */ = {
 			isa = PBXGroup;
 			children = (
+				9592E9DC262E963F00C2E05B /* UI + Presentation */,
 				DE630653262DE8E8001C2401 /* Networking */,
 				DEBE46FA262BD66A00DDDD20 /* Info.plist */,
 			);
@@ -593,6 +612,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9592E9DF262E967800C2E05B /* PlantViewModelTests.swift in Sources */,
 				DE630655262DE925001C2401 /* BasicRemoteLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
