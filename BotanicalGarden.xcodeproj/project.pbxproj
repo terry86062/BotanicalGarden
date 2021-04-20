@@ -10,6 +10,7 @@
 		9592E9DF262E967800C2E05B /* PlantViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592E9DE262E967800C2E05B /* PlantViewModelTests.swift */; };
 		9592E9E7262EB90300C2E05B /* PlantViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592E9E6262EB90300C2E05B /* PlantViewControllerTests.swift */; };
 		DE630655262DE925001C2401 /* BasicRemoteLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE630654262DE925001C2401 /* BasicRemoteLoaderTests.swift */; };
+		DE77B9D4262F06010099F350 /* PlantAPIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77B9D3262F06010099F350 /* PlantAPIIntegrationTests.swift */; };
 		DE88F036262C585800107012 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */; };
 		DE88F03F262C59A200107012 /* PlantUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88F03E262C59A200107012 /* PlantUIComposer.swift */; };
 		DE88F04D262C663B00107012 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DE88F04C262C663B00107012 /* Kingfisher */; };
@@ -50,6 +51,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DE77B9D6262F06010099F350 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEBE46D6262BD66800DDDD20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEBE46DD262BD66800DDDD20;
+			remoteInfo = BotanicalGarden;
+		};
 		DEBE46F5262BD66900DDDD20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DEBE46D6262BD66800DDDD20 /* Project object */;
@@ -70,6 +78,9 @@
 		9592E9DE262E967800C2E05B /* PlantViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModelTests.swift; sourceTree = "<group>"; };
 		9592E9E6262EB90300C2E05B /* PlantViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewControllerTests.swift; sourceTree = "<group>"; };
 		DE630654262DE925001C2401 /* BasicRemoteLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRemoteLoaderTests.swift; sourceTree = "<group>"; };
+		DE77B9D1262F06010099F350 /* PlantAPIIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantAPIIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE77B9D3262F06010099F350 /* PlantAPIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantAPIIntegrationTests.swift; sourceTree = "<group>"; };
+		DE77B9D5262F06010099F350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE88F035262C585800107012 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		DE88F03E262C59A200107012 /* PlantUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantUIComposer.swift; sourceTree = "<group>"; };
 		DE88F053262C67A200107012 /* KingfisherWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherWrapper.swift; sourceTree = "<group>"; };
@@ -115,6 +126,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DE77B9CE262F06010099F350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEBE46DB262BD66800DDDD20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,6 +183,15 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		DE77B9D2262F06010099F350 /* PlantAPIIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE77B9D3262F06010099F350 /* PlantAPIIntegrationTests.swift */,
+				DE77B9D5262F06010099F350 /* Info.plist */,
+			);
+			path = PlantAPIIntegrationTests;
+			sourceTree = "<group>";
+		};
 		DE88F034262C581C00107012 /* Thread */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +230,7 @@
 				DEBE46E0262BD66800DDDD20 /* BotanicalGarden */,
 				DEBE46F7262BD66A00DDDD20 /* BotanicalGardenTests */,
 				DEBE4702262BD66A00DDDD20 /* BotanicalGardenUITests */,
+				DE77B9D2262F06010099F350 /* PlantAPIIntegrationTests */,
 				DEBE46DF262BD66800DDDD20 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -213,6 +241,7 @@
 				DEBE46DE262BD66800DDDD20 /* BotanicalGarden.app */,
 				DEBE46F4262BD66900DDDD20 /* BotanicalGardenTests.xctest */,
 				DEBE46FF262BD66A00DDDD20 /* BotanicalGardenUITests.xctest */,
+				DE77B9D1262F06010099F350 /* PlantAPIIntegrationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -442,6 +471,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DE77B9D0262F06010099F350 /* PlantAPIIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE77B9DA262F06010099F350 /* Build configuration list for PBXNativeTarget "PlantAPIIntegrationTests" */;
+			buildPhases = (
+				DE77B9CD262F06010099F350 /* Sources */,
+				DE77B9CE262F06010099F350 /* Frameworks */,
+				DE77B9CF262F06010099F350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE77B9D7262F06010099F350 /* PBXTargetDependency */,
+			);
+			name = PlantAPIIntegrationTests;
+			productName = PlantAPIIntegrationTests;
+			productReference = DE77B9D1262F06010099F350 /* PlantAPIIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DEBE46DD262BD66800DDDD20 /* BotanicalGarden */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEBE4708262BD66A00DDDD20 /* Build configuration list for PBXNativeTarget "BotanicalGarden" */;
@@ -507,6 +554,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					DE77B9D0262F06010099F350 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = DEBE46DD262BD66800DDDD20;
+					};
 					DEBE46DD262BD66800DDDD20 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -540,11 +591,19 @@
 				DEBE46DD262BD66800DDDD20 /* BotanicalGarden */,
 				DEBE46F3262BD66900DDDD20 /* BotanicalGardenTests */,
 				DEBE46FE262BD66A00DDDD20 /* BotanicalGardenUITests */,
+				DE77B9D0262F06010099F350 /* PlantAPIIntegrationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DE77B9CF262F06010099F350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEBE46DC262BD66800DDDD20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -573,6 +632,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DE77B9CD262F06010099F350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE77B9D4262F06010099F350 /* PlantAPIIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEBE46DA262BD66800DDDD20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -632,6 +699,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DE77B9D7262F06010099F350 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEBE46DD262BD66800DDDD20 /* BotanicalGarden */;
+			targetProxy = DE77B9D6262F06010099F350 /* PBXContainerItemProxy */;
+		};
 		DEBE46F6262BD66900DDDD20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DEBE46DD262BD66800DDDD20 /* BotanicalGarden */;
@@ -656,6 +728,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DE77B9D8262F06010099F350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QPTS7A9V9F;
+				INFOPLIST_FILE = PlantAPIIntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.terry.PlantAPIIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BotanicalGarden.app/BotanicalGarden";
+			};
+			name = Debug;
+		};
+		DE77B9D9262F06010099F350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QPTS7A9V9F;
+				INFOPLIST_FILE = PlantAPIIntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.terry.PlantAPIIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BotanicalGarden.app/BotanicalGarden";
+			};
+			name = Release;
+		};
 		DEBE4706262BD66A00DDDD20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -900,6 +1012,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DE77B9DA262F06010099F350 /* Build configuration list for PBXNativeTarget "PlantAPIIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE77B9D8262F06010099F350 /* Debug */,
+				DE77B9D9262F06010099F350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DEBE46D9262BD66800DDDD20 /* Build configuration list for PBXProject "BotanicalGarden" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

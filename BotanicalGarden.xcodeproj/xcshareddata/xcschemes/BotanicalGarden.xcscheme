@@ -49,6 +49,16 @@
                ReferencedContainer = "container:BotanicalGarden.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DE77B9D0262F06010099F350"
+               BuildableName = "PlantAPIIntegrationTests.xctest"
+               BlueprintName = "PlantAPIIntegrationTests"
+               ReferencedContainer = "container:BotanicalGarden.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
