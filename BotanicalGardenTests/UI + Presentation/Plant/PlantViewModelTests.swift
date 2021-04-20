@@ -15,6 +15,20 @@ class PlantViewModelTests: XCTestCase {
         XCTAssertTrue(loader.requestedRequests.isEmpty)
     }
 
+    func test_loadPlant_callDidLoadPlantOnLoaderCompletedWithSuccess() {
+        let (sut, loader) = makeSUT()
+
+        var didLoadPlantHasCalled = false
+        sut.didLoadPlant = { _ in
+            didLoadPlantHasCalled = true
+        }
+
+        sut.loadPlant()
+        loader.complete(with: [])
+
+        XCTAssertTrue(didLoadPlantHasCalled)
+    }
+
     // MARK: - Helpers
     private func makeSUT() -> (sut: PlantViewModel, loader: PlantLoaderSpy) {
         let loader = PlantLoaderSpy()
@@ -31,6 +45,10 @@ class PlantViewModelTests: XCTestCase {
 
         func load(from request: PlantRequest?, completion: @escaping (PlantLoader.Result) -> Void) {
             messages.append((request, completion))
+        }
+
+        func complete(with items: [PlantItem], at index: Int = 0) {
+            messages[index].completion(.success(items))
         }
     }
 }

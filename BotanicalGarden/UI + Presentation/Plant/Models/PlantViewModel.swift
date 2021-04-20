@@ -29,10 +29,10 @@ public final class PlantViewModel: ViewModel, PlantViewModelInputs, PlantViewMod
     
     // MARK: - outputs
     var items: [PlantCellModel] = []
-    var didLoadPlant: (([IndexPath]) -> Void)?
+    public var didLoadPlant: (([IndexPath]) -> Void)?
 
     // MARK: - inputs
-    func loadPlant() {
+    public func loadPlant() {
         let request = PlantRequest(offset: items.count)
         loader.load(from: request) { [weak self] result in
             guard let self = self else { return }
