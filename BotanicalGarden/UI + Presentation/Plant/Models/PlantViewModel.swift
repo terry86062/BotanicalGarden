@@ -16,11 +16,11 @@ protocol PlantViewModelOutputs {
     var didLoadPlant: (([IndexPath]) -> Void)? { get set }
 }
 
-final class PlantViewModel: ViewModel, PlantViewModelInputs, PlantViewModelOutputs {
+public final class PlantViewModel: ViewModel, PlantViewModelInputs, PlantViewModelOutputs {
     
     private let loader: PlantLoader
 
-    init(loader: PlantLoader) {
+    public init(loader: PlantLoader) {
         self.loader = loader
     }
     

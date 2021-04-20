@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol PlantLoader {
+public protocol PlantLoader {
     typealias Result = Swift.Result<[PlantItem], Error>
     
     func load(from request: PlantRequest?, completion: @escaping (Result) -> Void)

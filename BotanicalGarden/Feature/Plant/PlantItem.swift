@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PlantItem {
+public struct PlantItem {
     let name: String
     let location: String
     let feature: String
