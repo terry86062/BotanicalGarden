@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol RemoteLoader {
+public protocol RemoteLoader {
     func load<Req: Request>(
         from request: Req,
         completion: @escaping (Result<Req.Mapper.Response, Error>) -> Void

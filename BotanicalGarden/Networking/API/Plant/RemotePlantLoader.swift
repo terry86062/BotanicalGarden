@@ -7,15 +7,15 @@
 
 import Foundation
 
-final class RemotePlantLoader: PlantLoader {
+public final class RemotePlantLoader: PlantLoader {
 
     private let loader: RemoteLoader
 
-    init(loader: RemoteLoader) {
+    public init(loader: RemoteLoader) {
         self.loader = loader
     }
 
-    func load(from request: PlantRequest?, completion: @escaping (PlantLoader.Result) -> Void) {
+    public func load(from request: PlantRequest?, completion: @escaping (PlantLoader.Result) -> Void) {
         guard let req = request else {
             completion(.failure(NetworkingError.Request.missingRequest))
             return
