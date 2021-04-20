@@ -18,7 +18,7 @@ class BasicRemoteLoaderTests: XCTestCase {
     func test_load_requestsDataFromURLRequest() {
         let (sut, client) = makeSUT()
         
-        let request = PlantRequest(offset: 0)
+        let request = PlantRequest()
         sut.load(from: request) { _ in }
         
         let urlRequest = try! request.buildRequest()
@@ -29,7 +29,7 @@ class BasicRemoteLoaderTests: XCTestCase {
     func test_loadTwice_requestsDataFromURLRequestTwice() {
         let (sut, client) = makeSUT()
         
-        let request = PlantRequest(offset: 0)
+        let request = PlantRequest()
         sut.load(from: request) { _ in }
         sut.load(from: request) { _ in }
         
@@ -43,7 +43,7 @@ class BasicRemoteLoaderTests: XCTestCase {
         
         let clientError = NSError(domain: "Test", code: 0)
         
-        let request = PlantRequest(offset: 0)
+        let request = PlantRequest()
         sut.load(from: request) { result in
             switch result {
             case .success(_):
@@ -64,7 +64,7 @@ class BasicRemoteLoaderTests: XCTestCase {
         
         samples.enumerated().forEach { index, code in
             
-            let request = PlantRequest(offset: 0)
+            let request = PlantRequest()
             sut.load(from: request) { result in
                 switch result {
                 case .success(_):
@@ -91,7 +91,7 @@ class BasicRemoteLoaderTests: XCTestCase {
             "F_Pic01_URL": ""
         ]
 
-        let request = PlantRequest(offset: 0)
+        let request = PlantRequest()
         sut.load(from: request) { result in
             switch result {
             case let .success(resultItem):
@@ -146,5 +146,13 @@ class BasicRemoteLoaderTests: XCTestCase {
             )!
             messages[index].completion(.success((data, response)))
         }
+    }
+
+    private struct PlantRequest: Request {
+        typealias Mapper = BasicResponseMapper<Root<[RemotePlantItem]>>
+
+        let urlStr = "https://data.taipei/api/v1/dataset/f18de02f-b6c9-47c0-8cda-50efad621c14"
+        let method = HTTPMethod.get
+        var parameters: [String: Any] { return ["scope": "resourceAquire"] }
     }
 }
