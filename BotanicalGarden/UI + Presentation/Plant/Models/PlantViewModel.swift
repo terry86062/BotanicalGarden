@@ -33,16 +33,22 @@ public final class PlantViewModel: ViewModel, PlantViewModelInputs, PlantViewMod
 
     // MARK: - inputs
     public func loadPlant() {
+        guard !isLoading else { return }
+        isLoading = true
+        
         let request = PlantRequest(offset: items.count)
         loader.load(from: request) { [weak self] result in
             guard let self = self else { return }
             if let plant = try? result.get() {
                 self.didLoadPlantSuccess(with: plant)
             }
+            self.isLoading = false
         }
     }
     
     // MARK: - Helpers
+    private var isLoading = false
+    
     private func didLoadPlantSuccess(with plant: [PlantItem]) {
         let indexPaths = getIndexPaths(withNew: plant.count)
         items += PlantCellModelsMapper.map(plant)
