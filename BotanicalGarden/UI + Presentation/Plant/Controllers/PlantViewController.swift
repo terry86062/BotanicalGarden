@@ -112,7 +112,7 @@ extension PlantViewController: UITableViewDelegate {
     private func scrollToLoadMore() {
         guard tableView.isDragging else { return }
         let contentHeight = tableView.contentSize.height
-        if tableView.contentOffset.y > contentHeight - tableView.frame.height {
+        if tableView.contentOffset.y > contentHeight - 3 * tableView.frame.height {
             viewModelInputs.loadPlant()
         }
     }
