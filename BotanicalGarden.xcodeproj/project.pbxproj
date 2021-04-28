@@ -733,7 +733,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QPTS7A9V9F;
+				DEVELOPMENT_TEAM = B8QRU3Z535;
 				INFOPLIST_FILE = PlantAPIIntegrationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -753,7 +753,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QPTS7A9V9F;
+				DEVELOPMENT_TEAM = B8QRU3Z535;
 				INFOPLIST_FILE = PlantAPIIntegrationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
