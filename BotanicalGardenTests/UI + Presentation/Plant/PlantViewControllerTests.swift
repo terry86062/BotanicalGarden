@@ -12,7 +12,7 @@ class PlantViewControllerTests: XCTestCase {
 
     func test_loadPlantActions_requestPlantFromViewModel() {
         let vm = PlantViewModelSpy()
-        let sut = PlantViewController(inputs: vm.inputs, outputs: vm.outputs)
+        let sut = PlantViewController(viewModel: (vm.inputs, vm.outputs))
 
         XCTAssertEqual(vm.loadPlantCallCount, 0)
 

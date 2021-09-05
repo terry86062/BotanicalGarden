@@ -21,17 +21,18 @@ public final class PlantViewController: UIViewController {
             tableView.register(PlantTableViewCell.self)
         }
     }
+    
+    // MARK: - typealias
+    public typealias ViewModel = (inputs: PlantViewModelInputs, outputs: PlantViewModelOutputs)
 
     // MARK: - private property
     private let minTop: CGFloat = -180 + 8 + 19.5 + 8 // 19.5 為 label 高度，8 為 label 上下間距
     private var oldContentOffsetY: CGFloat = 0
-    private var viewModelInputs: PlantViewModelInputs
-    private var viewModelOutputs: PlantViewModelOutputs
+    private let viewModel: ViewModel
     
     // MARK: - init
-    public init(inputs: PlantViewModelInputs, outputs: PlantViewModelOutputs) {
-        self.viewModelInputs = inputs
-        self.viewModelOutputs = outputs
+    public init(viewModel: ViewModel) {
+        self.viewModel = viewModel
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -44,11 +45,13 @@ public final class PlantViewController: UIViewController {
         super.viewDidLoad()
         
         binded()
-        viewModelInputs.loadPlant()
+        viewModel.inputs.loadPlant()
     }
     
     private func binded() {
-        viewModelOutputs.didLoadPlant = { [weak self] indexPaths in
+        var outputs = viewModel.outputs
+            
+        outputs.didLoadPlant = { [weak self] indexPaths in
             self?.tableView.insertRows(at: indexPaths, with: .none)
         }
     }
@@ -57,12 +60,12 @@ public final class PlantViewController: UIViewController {
 // MARK: - UITableViewDataSource
 extension PlantViewController: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModelOutputs.items.count
+        return viewModel.outputs.items.count
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(PlantTableViewCell.self, for: indexPath)
-        let item = viewModelOutputs.items[indexPath.row]
+        let item = viewModel.outputs.items[indexPath.row]
         cell.configure(imageURL: item.imageURL, name: item.name, location: item.location, feature: item.feature)
         return cell
     }
@@ -73,7 +76,7 @@ extension PlantViewController: UITableViewDataSourcePrefetching {
     public func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
         indexPaths.forEach { indexPath in
             let cell = tableView.cellForRow(at: indexPath) as? PlantTableViewCell
-            let item = viewModelOutputs.items[indexPath.row]
+            let item = viewModel.outputs.items[indexPath.row]
             cell?.configure(imageURL: item.imageURL)
         }
     }
@@ -94,12 +97,12 @@ extension PlantViewController: UITableViewDelegate {
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let item = viewModelOutputs.items[indexPath.row]
+        let item = viewModel.outputs.items[indexPath.row]
         return item.height
     }
     
     public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        let item = viewModelOutputs.items[indexPath.row]
+        let item = viewModel.outputs.items[indexPath.row]
         return item.height
     }
     
@@ -113,7 +116,7 @@ extension PlantViewController: UITableViewDelegate {
         guard tableView.isDragging else { return }
         let contentHeight = tableView.contentSize.height
         if tableView.contentOffset.y > contentHeight - 3 * tableView.frame.height {
-            viewModelInputs.loadPlant()
+            viewModel.inputs.loadPlant()
         }
     }
     
