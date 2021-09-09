@@ -48,6 +48,7 @@
 		DEBE47E0262C2B5300DDDD20 /* PlantCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47DF262C2B5300DDDD20 /* PlantCellModel.swift */; };
 		DEBE47E6262C2BA300DDDD20 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47E5262C2BA300DDDD20 /* ViewModel.swift */; };
 		DEBE47EE262C2C0600DDDD20 /* PlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE47ED262C2C0600DDDD20 /* PlantViewModel.swift */; };
+		DEBF147326E9B1250078C3AA /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF147226E9B1250078C3AA /* XCTestCase+MemoryLeakTracking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		DEBE47DF262C2B5300DDDD20 /* PlantCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCellModel.swift; sourceTree = "<group>"; };
 		DEBE47E5262C2BA300DDDD20 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		DEBE47ED262C2C0600DDDD20 /* PlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModel.swift; sourceTree = "<group>"; };
+		DEBF147226E9B1250078C3AA /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 		DEBE46F7262BD66A00DDDD20 /* BotanicalGardenTests */ = {
 			isa = PBXGroup;
 			children = (
+				DEBF147126E9B0D90078C3AA /* Helpers */,
 				9592E9DC262E963F00C2E05B /* UI + Presentation */,
 				DE630653262DE8E8001C2401 /* Networking */,
 				DEBE46FA262BD66A00DDDD20 /* Info.plist */,
@@ -466,6 +469,14 @@
 				DEBE47E5262C2BA300DDDD20 /* ViewModel.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		DEBF147126E9B0D90078C3AA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DEBF147226E9B1250078C3AA /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -683,6 +694,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9592E9E7262EB90300C2E05B /* PlantViewControllerTests.swift in Sources */,
+				DEBF147326E9B1250078C3AA /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				9592E9DF262E967800C2E05B /* PlantViewModelTests.swift in Sources */,
 				DE630655262DE925001C2401 /* BasicRemoteLoaderTests.swift in Sources */,
 			);
