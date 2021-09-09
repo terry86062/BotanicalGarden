@@ -107,9 +107,11 @@ class BasicRemoteLoaderTests: XCTestCase {
     }
 
     // MARK: - Helpers
-    private func makeSUT() -> (sut: BasicRemoteLoader, client: HTTPClientSpy) {
+    private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: BasicRemoteLoader, client: HTTPClientSpy) {
         let client = HTTPClientSpy()
         let sut = BasicRemoteLoader(client: client)
+        trackForMemoryLeaks(sut, file: file, line: line)
+        trackForMemoryLeaks(client, file: file, line: line)
         return (sut, client)
     }
     
