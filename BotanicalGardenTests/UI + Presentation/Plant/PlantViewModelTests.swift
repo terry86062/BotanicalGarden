@@ -30,9 +30,11 @@ class PlantViewModelTests: XCTestCase {
     }
 
     // MARK: - Helpers
-    private func makeSUT() -> (sut: PlantViewModel, loader: PlantLoaderSpy) {
+    private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: PlantViewModel, loader: PlantLoaderSpy) {
         let loader = PlantLoaderSpy()
         let sut = PlantViewModel(loader: loader)
+        trackForMemoryLeaks(sut, file: file, line: line)
+        trackForMemoryLeaks(loader, file: file, line: line)
         return (sut, loader)
     }
 
